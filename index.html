@@ -10,27 +10,34 @@
 <body>
     <div class="divisa">
         <div class="nombre">
-            Euros test
+            Euros
         </div>
-        <input class="valor" type="number" name="" id="" value="1">
+        <input class="valor" type="number" name="" id="" value="1" data-cambio="1">
     </div>
     <div class="divisa">
         <div class="nombre">
             Dolares
         </div>
-        <input class="valor" type="number" name="" id="" value="1">
+        <input class="valor" type="number" name="" id="" value="1" data-cambio="1.1252">
     </div>
     <div class="divisa">
         <div class="nombre">
             Libras
         </div>
-        <input class="valor" type="number" name="" id="" value="1">
+        <input class="valor" type="number" name="" id="" value="1" data-cambio="0.807">
     </div>
     <div class="divisa">
         <div class="nombre">
             Ethereum 
         </div>
-        <input class="valor" type="number" name="" id="" value="1">
+        <input class="valor" type="number" name="" id="" value="1" data-cambio="1.125">
     </div>
+    <script>
+        let inputs = document.querySelectorAll(".valor");
+        inputs.forEach(input => {
+            console.log(input.value);
+            console.log(input.dataset.cambio);
+        });
+    </script>
 </body>
 </html>
